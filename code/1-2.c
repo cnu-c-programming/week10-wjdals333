@@ -17,11 +17,12 @@ int main() {
     s.protocol = 0;
     sprintf(s.data, "hello world");
 
-    printf("version: %u, size %zu\n", s.version, sizeof(s.version));
-    printf("ihl: %u, sizee: %zu\n", s.ihl, sizeof(s.ihl));
+    printf("version: %u, size: %zu\n", s.version, sizeof(s.version));
+    printf("ihl: %u, size: %zu\n", s.ihl, sizeof(s.ihl));
     printf("ttl: %llu, size: %zu\n", s.ttl, sizeof(s.ttl));
     printf("protocol: %llu, size: %zu\n", s.protocol, sizeof(s.protocol));
     printf("data: %s, size: %zu\n", s.data, sizeof(s.data));
     
     return 0;
 }
+
