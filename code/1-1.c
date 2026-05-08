@@ -6,11 +6,14 @@ struct S1 {
     long long l;
 };
 
+#pragma pack(push, 1)
 struct  S2 {
     char c;
     int i;
     long long l;
-}__arrtribute__((packed));
+};
+#pragma pack(pop)
+
 
 int main() {
     struct S1 s1;
@@ -20,3 +23,5 @@ int main() {
     
     return 0;
 }
+
+
